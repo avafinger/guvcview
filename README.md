@@ -25,10 +25,14 @@ Howto Build from OPI
  * Install linux-headers for your kernel if not already installed (usually /usr/src/linux-headers-your_kernel_version)
  some may find /usr/src/linux-headers-your_kernel_version-sunxi, if that happens you need to edit Makefile.am and add the sufix '-sunxi'.
  * Run:
-./bootstrap.sh 
+./bootstrap.sh
+
 ./configure --prefix=/usr --enable-yuyv --disable-sdl2
+
 make
+
 sudo make install
+
  * Check the version:
 guvcview --version 
 Guvcview version 2.0.2
