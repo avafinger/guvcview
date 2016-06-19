@@ -920,7 +920,7 @@ int v4l2core_start_stream()
 	if(vd->streaming == STRM_OK)
 	{
 		fprintf(stderr, "V4L2_CORE: (stream already started) stream_status = STRM_OK\n");
-		return;
+		return E_OK;
 	}
 
 	int type = V4L2_BUF_TYPE_VIDEO_CAPTURE;
@@ -1307,7 +1307,9 @@ v4l2_frame_buff_t *v4l2core_get_decoded_frame()
  */
 static int try_video_stream_format(int width, int height, int pixelformat)
 {
+#ifdef _SUB_CHANNEL_BSP_            
     struct v4l2_pix_format subch_fmt;
+#endif    
     struct v4l2_streamparm parms;
     struct v4l2_input inp;
     config_t *my_config;    
@@ -1353,9 +1355,9 @@ static int try_video_stream_format(int width, int height, int pixelformat)
 	vd->format.fmt.pix.width = width;
 	vd->format.fmt.pix.height = height;
 
+#ifdef _SUB_CHANNEL_BSP_        
     if (my_config->cmos_camera) {
         CLEAR(subch_fmt);
-
         vd->format.fmt.pix.subchannel = &subch_fmt;
         subch_fmt.width = width / 2;
         subch_fmt.height = height / 2;
@@ -1363,6 +1365,7 @@ static int try_video_stream_format(int width, int height, int pixelformat)
         subch_fmt.field = V4L2_FIELD_NONE;        
         subch_fmt.rot_angle = 0;
     }
+#endif    
 
 	/* make sure we set a valid format*/
 	if(verbosity > 0)
