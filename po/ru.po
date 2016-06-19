@@ -1,0 +1,1656 @@
+# Copyright (C) 2009 Paulo Assis
+# This file is distributed under the same license as the guvcview package.
+#
+# Roustam Ghizdatov <roustam@2-u.ru>, 2009.
+msgid ""
+msgstr ""
+"Project-Id-Version: guvcview\n"
+"Report-Msgid-Bugs-To: pj.assis@gmail.com\n"
+"POT-Creation-Date: 2014-08-17 22:49+0100\n"
+"PO-Revision-Date: 2013-06-06 13:32+0000\n"
+"Last-Translator: Николай Авдеев (NickKolok, Nikolay Avdeev) <NickKolok@mail."
+"ru>\n"
+"Language-Team: Russian <>\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2013-12-08 10:36+0000\n"
+"X-Generator: Launchpad (build 16869)\n"
+
+#: ../data/guvcview.desktop.in.in.h:1
+msgid "guvcview"
+msgstr "guvcview"
+
+#: ../data/guvcview.desktop.in.in.h:2
+msgid "GTK UVC video viewer"
+msgstr "GTK UVC видео обозреватель"
+
+#: ../data/guvcview.desktop.in.in.h:3
+msgid "A video viewer and capturer for the linux uvc driver"
+msgstr "Программа просмотра и записи видео для драйвера Linux UVC"
+
+#: ../data/guvcview.appdata.xml.in.in.h:1
+msgid "capture video from v4l2 devices"
+msgstr ""
+
+#: ../data/guvcview.appdata.xml.in.in.h:2
+msgid ""
+"Video capture tool for video4linux2 compliant cameras, with special emphasis "
+"on the linux uvc driver. It provides Image (jpg, png, bmp) and Video (mjpeg, "
+"flv1, wmv1, mpg2, mpg4,...) capture with sound in several "
+"formats( currently: avi and matroska). I also supports a control panel "
+"option (--control_only) that is compatible with any other v4l2 app."
+msgstr ""
+
+#.
+#. * needed only for language files (not used)
+#.
+#. V4L2 control strings
+#: ../gview_v4l2core/v4l2_controls.c:49
+msgid "User Controls"
+msgstr "Настройки пользователя"
+
+#: ../gview_v4l2core/v4l2_controls.c:50
+msgid "Brightness"
+msgstr "Яркость"
+
+#: ../gview_v4l2core/v4l2_controls.c:51
+msgid "Contrast"
+msgstr "Контрастность"
+
+#: ../gview_v4l2core/v4l2_controls.c:52
+msgid "Hue"
+msgstr "Оттенок"
+
+#: ../gview_v4l2core/v4l2_controls.c:53
+msgid "Saturation"
+msgstr "Насыщенность"
+
+#: ../gview_v4l2core/v4l2_controls.c:54
+msgid "Sharpness"
+msgstr "Резкость"
+
+#: ../gview_v4l2core/v4l2_controls.c:55
+msgid "Gamma"
+msgstr "Гамма"
+
+#: ../gview_v4l2core/v4l2_controls.c:56
+msgid "Backlight Compensation"
+msgstr "Компенсация ярких участков"
+
+#: ../gview_v4l2core/v4l2_controls.c:57
+msgid "Power Line Frequency"
+msgstr "Частота в электросети"
+
+#: ../gview_v4l2core/v4l2_controls.c:58
+msgid "Hue, Automatic"
+msgstr "Оттенок, Автоматически"
+
+#: ../gview_v4l2core/v4l2_controls.c:59
+msgid "Focus, Auto"
+msgstr "Фокус, авто"
+
+#: ../gview_v4l2core/v4l2_controls.c:60
+msgid "Manual Mode"
+msgstr "Ручной режим"
+
+#: ../gview_v4l2core/v4l2_controls.c:61
+msgid "Auto Mode"
+msgstr "Авторежим"
+
+#: ../gview_v4l2core/v4l2_controls.c:62
+msgid "Shutter Priority Mode"
+msgstr "Режим приоритета затвора"
+
+#: ../gview_v4l2core/v4l2_controls.c:63
+msgid "Aperture Priority Mode"
+msgstr "Режим приоритета диафрагмы"
+
+#: ../gview_v4l2core/v4l2_controls.c:64
+msgid "Black Level"
+msgstr "Уровень чёрного"
+
+#: ../gview_v4l2core/v4l2_controls.c:65
+msgid "White Balance, Automatic"
+msgstr "Баланс белого, Автоматически"
+
+#: ../gview_v4l2core/v4l2_controls.c:66
+msgid "Do White Balance"
+msgstr "Сбалансировать белый цвет"
+
+#: ../gview_v4l2core/v4l2_controls.c:67
+msgid "Red Balance"
+msgstr "Баланс красного"
+
+#: ../gview_v4l2core/v4l2_controls.c:68
+msgid "Blue Balance"
+msgstr "Баланс синего"
+
+#: ../gview_v4l2core/v4l2_controls.c:69
+msgid "Exposure"
+msgstr "Экспозиция"
+
+#: ../gview_v4l2core/v4l2_controls.c:70
+msgid "Gain, Automatic"
+msgstr "Усиление, автоматически"
+
+#: ../gview_v4l2core/v4l2_controls.c:71
+msgid "Gain"
+msgstr "Усиление"
+
+#: ../gview_v4l2core/v4l2_controls.c:72
+msgid "Horizontal Flip"
+msgstr "Отразить по горизонтали"
+
+#: ../gview_v4l2core/v4l2_controls.c:73
+msgid "Vertical Flip"
+msgstr "Отразить по вертикали"
+
+#: ../gview_v4l2core/v4l2_controls.c:74
+msgid "Horizontal Center"
+msgstr "Горизонтальный центр"
+
+#: ../gview_v4l2core/v4l2_controls.c:75
+msgid "Vertical Center"
+msgstr "Вертикальный центр"
+
+#: ../gview_v4l2core/v4l2_controls.c:76
+msgid "Chroma AGC"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_controls.c:77
+msgid "Color Killer"
+msgstr "Обесцвечиватель"
+
+#: ../gview_v4l2core/v4l2_controls.c:78
+msgid "Color Effects"
+msgstr "Цветовые эффекты"
+
+#. CAMERA CLASS control strings
+#: ../gview_v4l2core/v4l2_controls.c:81
+msgid "Camera Controls"
+msgstr "Настройки камеры"
+
+#: ../gview_v4l2core/v4l2_controls.c:82
+msgid "Auto Exposure"
+msgstr "Авто выдержка"
+
+#: ../gview_v4l2core/v4l2_controls.c:83
+msgid "Exposure Time, Absolute"
+msgstr "Время выдержки, Абсолютное"
+
+#: ../gview_v4l2core/v4l2_controls.c:84
+msgid "Exposure, Dynamic Framerate"
+msgstr "Выдержка, Динамичная частота кадров"
+
+#: ../gview_v4l2core/v4l2_controls.c:85
+msgid "Pan, Relative"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_controls.c:86
+msgid "Tilt, Relative"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_controls.c:87
+msgid "Pan, Reset"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_controls.c:88
+msgid "Tilt, Reset"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_controls.c:89
+msgid "Pan, Absolute"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_controls.c:91
+msgid "Focus, Absolute"
+msgstr "Фокус, Совершенный"
+
+#: ../gview_v4l2core/v4l2_controls.c:92
+msgid "Focus, Relative"
+msgstr "Фокус, Относительный"
+
+#: ../gview_v4l2core/v4l2_controls.c:93
+msgid "Focus, Automatic"
+msgstr "Фокус, Автоматический"
+
+#: ../gview_v4l2core/v4l2_controls.c:94
+msgid "Zoom, Absolute"
+msgstr "Увеличение, Совершенное"
+
+#: ../gview_v4l2core/v4l2_controls.c:95
+msgid "Zoom, Relative"
+msgstr "Увеличение, Относительное"
+
+#: ../gview_v4l2core/v4l2_controls.c:96
+msgid "Zoom, Continuous"
+msgstr "Увеличение, Постоянное"
+
+#: ../gview_v4l2core/v4l2_controls.c:97
+msgid "Privacy"
+msgstr "Конфиденциальность"
+
+#. UVC specific control strings
+#: ../gview_v4l2core/v4l2_controls.c:100
+msgid "Exposure, Auto"
+msgstr "Экспозиция, авто"
+
+#: ../gview_v4l2core/v4l2_controls.c:101
+msgid "Exposure, Auto Priority"
+msgstr "Режим частоты кадров"
+
+#: ../gview_v4l2core/v4l2_controls.c:102
+msgid "Exposure (Absolute)"
+msgstr "Выдержка (совершенная)"
+
+#: ../gview_v4l2core/v4l2_controls.c:103
+msgid "White Balance Temperature, Auto"
+msgstr "Температура баланса белого, авто"
+
+#: ../gview_v4l2core/v4l2_controls.c:104
+msgid "White Balance Temperature"
+msgstr "Температура баланса белого"
+
+#: ../gview_v4l2core/v4l2_controls.c:105
+msgid "White Balance Component, Auto"
+msgstr "Компонент баланса белого, авто"
+
+#: ../gview_v4l2core/v4l2_controls.c:106
+msgid "White Balance Blue Component"
+msgstr "Синий компонент баланса белого"
+
+#: ../gview_v4l2core/v4l2_controls.c:107
+msgid "White Balance Red Component"
+msgstr "Красный компонент баланса белого"
+
+#. libwebcam specific control strings
+#: ../gview_v4l2core/v4l2_controls.c:110
+msgid "Focus"
+msgstr "Фокусирование"
+
+#: ../gview_v4l2core/v4l2_controls.c:111
+msgid "Focus (Absolute)"
+msgstr "Фокусирование (Абсолютное)"
+
+#: ../gview_v4l2core/v4l2_xu_ctrls.c:63 ../guvcview/gui_gtk3_v4l2ctrls.c:239
+msgid "Off"
+msgstr "Откл."
+
+#: ../gview_v4l2core/v4l2_xu_ctrls.c:64 ../guvcview/gui_gtk3_v4l2ctrls.c:239
+msgid "On"
+msgstr "Вкл."
+
+#: ../gview_v4l2core/v4l2_xu_ctrls.c:65 ../guvcview/gui_gtk3_v4l2ctrls.c:239
+msgid "Blinking"
+msgstr "Мерцание"
+
+#: ../gview_v4l2core/v4l2_xu_ctrls.c:66 ../guvcview/gui_gtk3_v4l2ctrls.c:239
+msgid "Auto"
+msgstr "Авто"
+
+#: ../gview_v4l2core/v4l2_xu_ctrls.c:73
+msgid "Pan (relative)"
+msgstr "Гор. поворот (относит.)"
+
+#: ../gview_v4l2core/v4l2_xu_ctrls.c:86
+msgid "Tilt (relative)"
+msgstr "Верт. поворот (относит.)"
+
+#: ../gview_v4l2core/v4l2_xu_ctrls.c:99
+msgid "Pan Reset"
+msgstr "Гор. возврат"
+
+#: ../gview_v4l2core/v4l2_xu_ctrls.c:112
+msgid "Tilt Reset"
+msgstr "Верт. возврат"
+
+#: ../gview_v4l2core/v4l2_xu_ctrls.c:125
+msgid "Focus (absolute)"
+msgstr "Фокус (абсолютный)"
+
+#: ../gview_v4l2core/v4l2_xu_ctrls.c:138
+msgid "LED1 Mode"
+msgstr "Режим светодиода1"
+
+#: ../gview_v4l2core/v4l2_xu_ctrls.c:151
+msgid "LED1 Frequency"
+msgstr "Частота светодиода1"
+
+#: ../gview_v4l2core/v4l2_xu_ctrls.c:164
+msgid "Disable video processing"
+msgstr "Отключение обработки видео"
+
+#: ../gview_v4l2core/v4l2_xu_ctrls.c:177
+msgid "Raw bits per pixel"
+msgstr "Кол-во бит на пиксел"
+
+#: ../gview_encoder/audio_codecs.c:63
+#, fuzzy
+msgid "PCM - uncompressed (float 32 bit)"
+msgstr "PCM - без сжатия (16-разрядный)"
+
+#: ../gview_encoder/audio_codecs.c:80
+msgid "MP2 (MPEG audio layer 2)"
+msgstr ""
+
+#: ../gview_encoder/audio_codecs.c:97
+msgid "MP3 (MPEG audio layer 3)"
+msgstr ""
+
+#: ../gview_encoder/audio_codecs.c:118
+msgid "AC-3 (ATSC A/52A)"
+msgstr ""
+
+#: ../gview_encoder/audio_codecs.c:139
+msgid "AAC (Advanced Audio Coding)"
+msgstr ""
+
+#: ../gview_encoder/audio_codecs.c:160
+msgid "Vorbis"
+msgstr "Vorbis"
+
+#: ../gview_encoder/video_codecs.c:75
+#, fuzzy
+msgid "Raw camera input"
+msgstr "Вывод камеры:"
+
+#: ../gview_encoder/video_codecs.c:111
+msgid "MJPG - compressed"
+msgstr "MJPG - сжатый"
+
+#: ../gview_encoder/video_codecs.c:147
+msgid "MPEG video 1"
+msgstr "MPEG-видео 1"
+
+#: ../gview_encoder/video_codecs.c:183
+msgid "FLV1 - flash video 1"
+msgstr "FLV1 - флэш-видео 1"
+
+#: ../gview_encoder/video_codecs.c:219
+msgid "WMV1 - win. med. video 7"
+msgstr "WMV1 - видео Windows Media 7"
+
+#: ../gview_encoder/video_codecs.c:255
+msgid "MPG2 - MPG2 format"
+msgstr "MPG2 - формат MPG2"
+
+#: ../gview_encoder/video_codecs.c:291
+msgid "MS MP4 V3"
+msgstr "MS MP4 V3"
+
+#: ../gview_encoder/video_codecs.c:327
+msgid "MPEG4-ASP"
+msgstr "MPEG4-ASP"
+
+#: ../gview_encoder/video_codecs.c:363
+msgid "MPEG4-AVC (H264)"
+msgstr "MPEG4-AVC (H264)"
+
+#: ../gview_encoder/video_codecs.c:403
+msgid "VP8 (VP8)"
+msgstr "VP8 (VP8)"
+
+#: ../gview_encoder/video_codecs.c:439
+msgid "Theora (ogg theora)"
+msgstr ""
+
+#: ../guvcview/gui_gtk3_audioctrls.c:95
+msgid "Audio API:"
+msgstr "Аудио-API:"
+
+#: ../guvcview/gui_gtk3_audioctrls.c:106
+msgid "NO SOUND"
+msgstr ""
+
+#: ../guvcview/gui_gtk3_audioctrls.c:107
+msgid "PORTAUDIO"
+msgstr "PORTAUDIO"
+
+#: ../guvcview/gui_gtk3_audioctrls.c:110
+msgid "PULSEAUDIO"
+msgstr "PULSEAUDIO"
+
+#: ../guvcview/gui_gtk3_audioctrls.c:127
+msgid "Input Device:"
+msgstr "Устройство ввода:"
+
+#: ../guvcview/gui_gtk3_audioctrls.c:161
+msgid "Sample Rate:"
+msgstr "Частота дискретизации:"
+
+#: ../guvcview/gui_gtk3_audioctrls.c:168 ../guvcview/gui_gtk3_audioctrls.c:214
+msgid "Dev. Default"
+msgstr "по умолчанию"
+
+#: ../guvcview/gui_gtk3_audioctrls.c:207
+msgid "Channels:"
+msgstr "Каналов:"
+
+#: ../guvcview/gui_gtk3_audioctrls.c:215
+msgid "1 - mono"
+msgstr "1 - моно"
+
+#: ../guvcview/gui_gtk3_audioctrls.c:216
+msgid "2 - stereo"
+msgstr "2 - стерео"
+
+#: ../guvcview/gui_gtk3_audioctrls.c:235
+#, fuzzy
+msgid "---- Audio Filters ----"
+msgstr "---- Видео-фильтры ----"
+
+#. Echo FX
+#: ../guvcview/gui_gtk3_audioctrls.c:255
+msgid " Echo"
+msgstr " Эхо"
+
+#. Reverb FX
+#: ../guvcview/gui_gtk3_audioctrls.c:268
+msgid " Reverb"
+msgstr " Реверберация"
+
+#. Fuzz FX
+#: ../guvcview/gui_gtk3_audioctrls.c:281
+msgid " Fuzz"
+msgstr " Фуз"
+
+#. WahWah FX
+#: ../guvcview/gui_gtk3_audioctrls.c:294
+msgid " WahWah"
+msgstr " Квакушка"
+
+#. Ducky FX
+#: ../guvcview/gui_gtk3_audioctrls.c:307
+msgid " Ducky"
+msgstr " Утёнок"
+
+#: ../guvcview/gui_gtk3.c:310 ../guvcview/gui_gtk3_callbacks.c:749
+msgid "Stop Video (V)"
+msgstr "Остановить видео (V)"
+
+#. video button
+#: ../guvcview/gui_gtk3.c:315 ../guvcview/gui_gtk3.c:600
+#: ../guvcview/gui_gtk3_callbacks.c:755
+msgid "Cap. Video (V)"
+msgstr "Захв. видео (V)"
+
+#: ../guvcview/gui_gtk3.c:376 ../guvcview/gui_gtk3.c:383
+msgid "Error"
+msgstr "Ошибка"
+
+#: ../guvcview/gui_gtk3.c:379 ../guvcview/gui_gtk3.c:386
+#: ../guvcview/gui_gtk3_callbacks.c:2097
+msgid "_Ok"
+msgstr ""
+
+#: ../guvcview/gui_gtk3.c:380 ../guvcview/gui_gtk3_callbacks.c:185
+#: ../guvcview/gui_gtk3_callbacks.c:199 ../guvcview/gui_gtk3_callbacks.c:522
+#: ../guvcview/gui_gtk3_callbacks.c:624 ../guvcview/gui_gtk3_callbacks.c:1755
+#: ../guvcview/gui_gtk3_callbacks.c:2098
+#, fuzzy
+msgid "_Cancel"
+msgstr "Отмена"
+
+#: ../guvcview/gui_gtk3.c:407
+msgid ""
+"\n"
+"You have more than one video device installed.\n"
+"Do you want to try another one ?\n"
+msgstr ""
+"\n"
+"У вас установлен дополнительный видео прибор.\n"
+"Хотите попробовать другой?\n"
+
+#. ---- Devices ----
+#: ../guvcview/gui_gtk3.c:414 ../guvcview/gui_gtk3_videoctrls.c:106
+msgid "Device:"
+msgstr "Устройство:"
+
+#: ../guvcview/gui_gtk3.c:516
+msgid "Guvcview Video Capture"
+msgstr "Заxват видео через Guvcview"
+
+#: ../guvcview/gui_gtk3.c:525
+#, fuzzy
+msgid "Guvcview"
+msgstr "guvcview"
+
+#: ../guvcview/gui_gtk3.c:572
+#, fuzzy
+msgid "Stop Cap. (I)"
+msgstr "Прекратить автоматический захват (I)"
+
+#: ../guvcview/gui_gtk3.c:578 ../guvcview/gui_gtk3_callbacks.c:720
+#: ../guvcview/video_capture.c:250
+msgid "Cap. Image (I)"
+msgstr "Захв. Изображение (I)"
+
+#. quit button
+#. GtkWidget *quitButton = gtk_button_new_from_stock(GTK_STOCK_QUIT);
+#: ../guvcview/gui_gtk3.c:621
+msgid "_Quit"
+msgstr ""
+
+#: ../guvcview/gui_gtk3.c:667
+msgid "Image Controls"
+msgstr "Регулировка изображения"
+
+#: ../guvcview/gui_gtk3.c:703
+#, fuzzy
+msgid "H264 Controls"
+msgstr "Настройки пользователя"
+
+#: ../guvcview/gui_gtk3.c:742
+#, fuzzy
+msgid "Video Controls"
+msgstr "Настройки пользователя"
+
+#: ../guvcview/gui_gtk3.c:777
+#, fuzzy
+msgid "Audio Controls"
+msgstr "Настройки пользователя"
+
+#: ../guvcview/gui_gtk3_callbacks.c:182 ../guvcview/gui_gtk3_menu.c:72
+msgid "Save Profile"
+msgstr "Сохранить профиль"
+
+#: ../guvcview/gui_gtk3_callbacks.c:186 ../guvcview/gui_gtk3_callbacks.c:523
+#: ../guvcview/gui_gtk3_callbacks.c:625
+msgid "_Save"
+msgstr ""
+
+#: ../guvcview/gui_gtk3_callbacks.c:196 ../guvcview/gui_gtk3_menu.c:71
+msgid "Load Profile"
+msgstr "Загрузить профиль"
+
+#: ../guvcview/gui_gtk3_callbacks.c:200
+msgid "_Open"
+msgstr ""
+
+#: ../guvcview/gui_gtk3_callbacks.c:208 ../guvcview/gui_gtk3_callbacks.c:531
+#: ../guvcview/gui_gtk3_callbacks.c:634
+msgid "File Format:"
+msgstr "Формат файла:"
+
+#: ../guvcview/gui_gtk3_callbacks.c:220
+msgid "gpfl  (*.gpfl)"
+msgstr ""
+
+#: ../guvcview/gui_gtk3_callbacks.c:221
+msgid "any (*.*)"
+msgstr ""
+
+#: ../guvcview/gui_gtk3_callbacks.c:519
+#, fuzzy
+msgid "Photo file name"
+msgstr "Имя файла изображения"
+
+#: ../guvcview/gui_gtk3_callbacks.c:543
+#, fuzzy
+msgid "Raw  (*.raw)"
+msgstr "Необработанное изображение Raw Image (raw)"
+
+#: ../guvcview/gui_gtk3_callbacks.c:544
+#, fuzzy
+msgid "Jpeg (*.jpg)"
+msgstr "Jpeg (jpg)"
+
+#: ../guvcview/gui_gtk3_callbacks.c:545
+msgid "Png  (*.png)"
+msgstr ""
+
+#: ../guvcview/gui_gtk3_callbacks.c:546
+msgid "Bmp  (*.bmp)"
+msgstr ""
+
+#: ../guvcview/gui_gtk3_callbacks.c:621
+#, fuzzy
+msgid "Video file name"
+msgstr "Имя файла изображения"
+
+#: ../guvcview/gui_gtk3_callbacks.c:646
+msgid "Matroska  (*.mkv)"
+msgstr ""
+
+#: ../guvcview/gui_gtk3_callbacks.c:647
+msgid "WebM (*.webm)"
+msgstr ""
+
+#: ../guvcview/gui_gtk3_callbacks.c:648
+msgid "Avi  (*.avi)"
+msgstr ""
+
+#: ../guvcview/gui_gtk3_callbacks.c:1158
+msgid "start new"
+msgstr "Запуск нового"
+
+#: ../guvcview/gui_gtk3_callbacks.c:1161
+msgid "restart"
+msgstr "перезагрузить"
+
+#: ../guvcview/gui_gtk3_callbacks.c:1163
+msgid "new"
+msgstr "Новый"
+
+#: ../guvcview/gui_gtk3_callbacks.c:1165
+msgid "cancel"
+msgstr "Отмена"
+
+#: ../guvcview/gui_gtk3_callbacks.c:1170
+msgid ""
+"launch new process or restart?.\n"
+"\n"
+msgstr ""
+"Запустить новый процесс или перезапустить?\n"
+"\n"
+
+#: ../guvcview/gui_gtk3_callbacks.c:1751
+#, fuzzy
+msgid "video codec values"
+msgstr "значения звукового кодека"
+
+#: ../guvcview/gui_gtk3_callbacks.c:1754
+msgid "_OK"
+msgstr ""
+
+#: ../guvcview/gui_gtk3_callbacks.c:1760
+msgid ""
+"                              encoder fps:   \n"
+" (0 - use fps combobox value)"
+msgstr ""
+"                              кодек кадров/с.:   \n"
+" (0 - использовать значение списка)"
+
+#: ../guvcview/gui_gtk3_callbacks.c:1773
+msgid " monotonic pts"
+msgstr ""
+
+#. bit rate
+#: ../guvcview/gui_gtk3_callbacks.c:1780 ../guvcview/gui_gtk3_callbacks.c:2105
+msgid "bit rate:   "
+msgstr "Битрейт:   "
+
+#: ../guvcview/gui_gtk3_callbacks.c:1793
+msgid "qmax:   "
+msgstr "qmax:   "
+
+#: ../guvcview/gui_gtk3_callbacks.c:1806
+msgid "qmin:   "
+msgstr "qmin:   "
+
+#: ../guvcview/gui_gtk3_callbacks.c:1819
+msgid "max. qdiff:   "
+msgstr "макс. qdiff:   "
+
+#: ../guvcview/gui_gtk3_callbacks.c:1832
+msgid "dia size:   "
+msgstr "dia-size:   "
+
+#: ../guvcview/gui_gtk3_callbacks.c:1845
+msgid "pre dia size:   "
+msgstr "pre-dia-size:   "
+
+#: ../guvcview/gui_gtk3_callbacks.c:1858
+msgid "pre me:   "
+msgstr "pre-me:   "
+
+#: ../guvcview/gui_gtk3_callbacks.c:1871
+msgid "pre cmp:   "
+msgstr "pre-cmp:   "
+
+#: ../guvcview/gui_gtk3_callbacks.c:1884
+msgid "cmp:   "
+msgstr "cmp:   "
+
+#: ../guvcview/gui_gtk3_callbacks.c:1897
+msgid "sub cmp:   "
+msgstr "sub-cmp:   "
+
+#: ../guvcview/gui_gtk3_callbacks.c:1910
+msgid "last predictor count:   "
+msgstr "last-predictor-count:   "
+
+#: ../guvcview/gui_gtk3_callbacks.c:1923
+msgid "gop size:   "
+msgstr "gop-size:   "
+
+#: ../guvcview/gui_gtk3_callbacks.c:1936
+msgid "qcompress:   "
+msgstr "qcompress:   "
+
+#: ../guvcview/gui_gtk3_callbacks.c:1949
+msgid "qblur:   "
+msgstr "qblur:   "
+
+#: ../guvcview/gui_gtk3_callbacks.c:1962
+msgid "subq:   "
+msgstr ""
+
+#: ../guvcview/gui_gtk3_callbacks.c:1975
+msgid "framerefs:   "
+msgstr ""
+
+#: ../guvcview/gui_gtk3_callbacks.c:1988
+msgid "me method:   "
+msgstr "me-method:   "
+
+#: ../guvcview/gui_gtk3_callbacks.c:2001
+msgid "mb decision:   "
+msgstr "mb-decision:   "
+
+#: ../guvcview/gui_gtk3_callbacks.c:2014
+msgid "max B frames:   "
+msgstr ""
+
+#: ../guvcview/gui_gtk3_callbacks.c:2027
+msgid "num threads:   "
+msgstr ""
+
+#: ../guvcview/gui_gtk3_callbacks.c:2094
+msgid "audio codec values"
+msgstr "значения звукового кодека"
+
+#. sample format
+#: ../guvcview/gui_gtk3_callbacks.c:2119
+msgid "sample format:   "
+msgstr "Формат сэмпла   "
+
+#: ../guvcview/gui_gtk3_h264ctrls.c:622
+#, fuzzy
+msgid "Rate Control Mode:"
+msgstr "Регулировка изображения"
+
+#: ../guvcview/gui_gtk3_h264ctrls.c:633
+msgid "CBR"
+msgstr ""
+
+#: ../guvcview/gui_gtk3_h264ctrls.c:636
+msgid "VBR"
+msgstr ""
+
+#: ../guvcview/gui_gtk3_h264ctrls.c:640
+msgid "Constant QP"
+msgstr ""
+
+#: ../guvcview/gui_gtk3_h264ctrls.c:658
+msgid "Rate Control Mode flags:"
+msgstr ""
+
+#: ../guvcview/gui_gtk3_h264ctrls.c:683
+msgid "Temporal Scale Mode:"
+msgstr ""
+
+#: ../guvcview/gui_gtk3_h264ctrls.c:711
+msgid "Spatial Scale Mode:"
+msgstr ""
+
+#: ../guvcview/gui_gtk3_h264ctrls.c:741
+msgid "Frame Interval (100ns units):"
+msgstr ""
+
+#: ../guvcview/gui_gtk3_h264ctrls.c:778
+#, fuzzy
+msgid "Bit Rate:"
+msgstr "Битрейт:   "
+
+#: ../guvcview/gui_gtk3_h264ctrls.c:801
+msgid "Hints:"
+msgstr ""
+
+#: ../guvcview/gui_gtk3_h264ctrls.c:806
+#, fuzzy
+msgid "Resolution"
+msgstr "Разрешение:"
+
+#: ../guvcview/gui_gtk3_h264ctrls.c:810
+#, fuzzy
+msgid "Profile"
+msgstr "Сохранить профиль"
+
+#: ../guvcview/gui_gtk3_h264ctrls.c:814
+#, fuzzy
+msgid "Rate Control"
+msgstr "Регулировка изображения"
+
+#: ../guvcview/gui_gtk3_h264ctrls.c:818
+msgid "Usage Type"
+msgstr ""
+
+#: ../guvcview/gui_gtk3_h264ctrls.c:822
+msgid "Slice Mode"
+msgstr ""
+
+#: ../guvcview/gui_gtk3_h264ctrls.c:826
+msgid "Slice Unit"
+msgstr ""
+
+#: ../guvcview/gui_gtk3_h264ctrls.c:830
+msgid "MVC View"
+msgstr ""
+
+#: ../guvcview/gui_gtk3_h264ctrls.c:834
+msgid "Temporal Scale"
+msgstr ""
+
+#: ../guvcview/gui_gtk3_h264ctrls.c:838
+msgid "SNR Scale"
+msgstr ""
+
+#: ../guvcview/gui_gtk3_h264ctrls.c:842
+msgid "Spatial Scale"
+msgstr ""
+
+#: ../guvcview/gui_gtk3_h264ctrls.c:846
+msgid "Spatial Layer Ratio"
+msgstr ""
+
+#: ../guvcview/gui_gtk3_h264ctrls.c:850
+#, fuzzy
+msgid "Frame Interval"
+msgstr "Частота кадров:"
+
+#: ../guvcview/gui_gtk3_h264ctrls.c:854
+msgid "Leaky Bucket Size"
+msgstr ""
+
+#: ../guvcview/gui_gtk3_h264ctrls.c:858
+msgid "Bit Rate"
+msgstr ""
+
+#: ../guvcview/gui_gtk3_h264ctrls.c:862 ../guvcview/gui_gtk3_h264ctrls.c:1220
+msgid "CABAC"
+msgstr ""
+
+#: ../guvcview/gui_gtk3_h264ctrls.c:866
+msgid "(I) Frame Period"
+msgstr ""
+
+#: ../guvcview/gui_gtk3_h264ctrls.c:878
+msgid "Slice Mode:"
+msgstr ""
+
+#: ../guvcview/gui_gtk3_h264ctrls.c:885
+msgid "no multiple slices"
+msgstr ""
+
+#: ../guvcview/gui_gtk3_h264ctrls.c:887
+msgid "bits/slice"
+msgstr ""
+
+#: ../guvcview/gui_gtk3_h264ctrls.c:889
+msgid "Mbits/slice"
+msgstr ""
+
+#: ../guvcview/gui_gtk3_h264ctrls.c:891
+msgid "slices/frame"
+msgstr ""
+
+#: ../guvcview/gui_gtk3_h264ctrls.c:900
+msgid "Slice Units:"
+msgstr ""
+
+#: ../guvcview/gui_gtk3_h264ctrls.c:921
+#, fuzzy
+msgid "Profile:"
+msgstr "Сохранить профиль"
+
+#: ../guvcview/gui_gtk3_h264ctrls.c:928
+#, fuzzy
+msgid "Baseline Profile"
+msgstr "Сохранить профиль"
+
+#: ../guvcview/gui_gtk3_h264ctrls.c:930
+#, fuzzy
+msgid "Main Profile"
+msgstr "Сохранить профиль"
+
+#: ../guvcview/gui_gtk3_h264ctrls.c:932
+#, fuzzy
+msgid "High Profile"
+msgstr "Сохранить профиль"
+
+#: ../guvcview/gui_gtk3_h264ctrls.c:934
+msgid "Scalable Baseline Profile"
+msgstr ""
+
+#: ../guvcview/gui_gtk3_h264ctrls.c:936
+#, fuzzy
+msgid "Scalable High Profile"
+msgstr "Сохранить профиль"
+
+#: ../guvcview/gui_gtk3_h264ctrls.c:938
+msgid "Multiview High Profile"
+msgstr ""
+
+#: ../guvcview/gui_gtk3_h264ctrls.c:940
+#, fuzzy
+msgid "Stereo High Profile"
+msgstr "Сохранить профиль"
+
+#: ../guvcview/gui_gtk3_h264ctrls.c:979
+msgid "Profile flags:"
+msgstr ""
+
+#: ../guvcview/gui_gtk3_h264ctrls.c:1004
+msgid "(I) Frame Period (ms):"
+msgstr ""
+
+#: ../guvcview/gui_gtk3_h264ctrls.c:1025
+msgid "Estimated Video Delay (ms):"
+msgstr ""
+
+#: ../guvcview/gui_gtk3_h264ctrls.c:1046
+msgid "Estimated Max Config Delay (ms):"
+msgstr ""
+
+#: ../guvcview/gui_gtk3_h264ctrls.c:1067
+msgid "Usage Type:"
+msgstr ""
+
+#: ../guvcview/gui_gtk3_h264ctrls.c:1074
+msgid "Real-time"
+msgstr ""
+
+#: ../guvcview/gui_gtk3_h264ctrls.c:1076
+msgid "Broadcast"
+msgstr ""
+
+#: ../guvcview/gui_gtk3_h264ctrls.c:1078
+msgid "Storage"
+msgstr ""
+
+#: ../guvcview/gui_gtk3_h264ctrls.c:1080
+msgid "(0) Non-scalable single layer AVC"
+msgstr ""
+
+#: ../guvcview/gui_gtk3_h264ctrls.c:1082
+msgid "(1) SVC temporal scalability with hierarchical P"
+msgstr ""
+
+#: ../guvcview/gui_gtk3_h264ctrls.c:1084
+msgid "(2q) SVC temporal scalability + Quality/SNR scalability"
+msgstr ""
+
+#: ../guvcview/gui_gtk3_h264ctrls.c:1086
+msgid "(2s) SVC temporal scalability + spatial scalability"
+msgstr ""
+
+#: ../guvcview/gui_gtk3_h264ctrls.c:1088
+msgid "(3) Full SVC scalability"
+msgstr ""
+
+#: ../guvcview/gui_gtk3_h264ctrls.c:1102
+msgid "SNR Control Mode:"
+msgstr ""
+
+#: ../guvcview/gui_gtk3_h264ctrls.c:1109
+msgid "No SNR Enhancement Layer"
+msgstr ""
+
+#: ../guvcview/gui_gtk3_h264ctrls.c:1111
+msgid "CGS NonRewrite (2 Layer)"
+msgstr ""
+
+#: ../guvcview/gui_gtk3_h264ctrls.c:1113
+msgid "CGS NonRewrite (3 Layer)"
+msgstr ""
+
+#: ../guvcview/gui_gtk3_h264ctrls.c:1115
+msgid "CGS Rewrite (2 Layer)"
+msgstr ""
+
+#: ../guvcview/gui_gtk3_h264ctrls.c:1117
+msgid "CGS Rewrite (3 Layer)"
+msgstr ""
+
+#: ../guvcview/gui_gtk3_h264ctrls.c:1119
+msgid "MGS (2 Layer)"
+msgstr ""
+
+#: ../guvcview/gui_gtk3_h264ctrls.c:1144
+msgid "Stream Mux Enable"
+msgstr ""
+
+#: ../guvcview/gui_gtk3_h264ctrls.c:1151
+msgid "Embed H.264 aux stream"
+msgstr ""
+
+#: ../guvcview/gui_gtk3_h264ctrls.c:1153
+msgid "Embed YUY2 aux stream"
+msgstr ""
+
+#: ../guvcview/gui_gtk3_h264ctrls.c:1155
+msgid "Embed NV12 aux stream"
+msgstr ""
+
+#: ../guvcview/gui_gtk3_h264ctrls.c:1175
+msgid "MJPG payload container"
+msgstr ""
+
+#: ../guvcview/gui_gtk3_h264ctrls.c:1189
+#, fuzzy
+msgid "Stream Format:"
+msgstr "Формат файла:"
+
+#: ../guvcview/gui_gtk3_h264ctrls.c:1197
+msgid "Byte stream format (H.264 Annex-B)"
+msgstr ""
+
+#: ../guvcview/gui_gtk3_h264ctrls.c:1199
+#, fuzzy
+msgid "NAL stream format"
+msgstr "AVI - формат avi"
+
+#: ../guvcview/gui_gtk3_h264ctrls.c:1210
+msgid "Entropy CABAC:"
+msgstr ""
+
+#: ../guvcview/gui_gtk3_h264ctrls.c:1218
+msgid "CAVLC"
+msgstr ""
+
+#: ../guvcview/gui_gtk3_h264ctrls.c:1231
+msgid "Picture timing SEI"
+msgstr ""
+
+#: ../guvcview/gui_gtk3_h264ctrls.c:1238
+#, fuzzy
+msgid "B Frames:"
+msgstr "Частота кадров:"
+
+#: ../guvcview/gui_gtk3_h264ctrls.c:1263
+msgid "Preview Flipped"
+msgstr ""
+
+#: ../guvcview/gui_gtk3_h264ctrls.c:1270
+msgid "Additional MVC Views:"
+msgstr ""
+
+#: ../guvcview/gui_gtk3_h264ctrls.c:1295
+msgid "Simulcast stream index:"
+msgstr ""
+
+#: ../guvcview/gui_gtk3_h264ctrls.c:1320
+msgid "Spatial Layer Ratio:"
+msgstr ""
+
+#: ../guvcview/gui_gtk3_h264ctrls.c:1349
+msgid "Leaky Bucket Size (ms):"
+msgstr ""
+
+#. encoder reset
+#: ../guvcview/gui_gtk3_h264ctrls.c:1376
+#, fuzzy
+msgid "Encoder Reset"
+msgstr "Гор. возврат"
+
+#.
+#. GtkWidget *probe_button = gtk_button_new_with_label(_("PROBE"));
+#. g_signal_connect (GTK_BUTTON(probe_button), "clicked",
+#. G_CALLBACK (h264_probe_button_clicked), all_data);
+#.
+#. gtk_grid_attach (GTK_GRID(h264_controls_grid), probe_button, 0, line, 1 ,1);
+#. gtk_widget_show(probe_button);
+#.
+#: ../guvcview/gui_gtk3_h264ctrls.c:1391
+msgid "COMMIT"
+msgstr ""
+
+#: ../guvcview/gui_gtk3_menu.c:70
+msgid "Settings"
+msgstr "Настройки"
+
+#: ../guvcview/gui_gtk3_menu.c:73
+msgid "Hardware Defaults"
+msgstr "Настройки оборудования по умолчанию"
+
+#: ../guvcview/gui_gtk3_menu.c:81
+msgid "Camera Button"
+msgstr "Кнопка камеры"
+
+#: ../guvcview/gui_gtk3_menu.c:86
+msgid "Capture Image"
+msgstr "Захватить изображение"
+
+#: ../guvcview/gui_gtk3_menu.c:91
+msgid "Capture Video"
+msgstr "Захватить видео"
+
+#: ../guvcview/gui_gtk3_menu.c:134
+msgid "Photo"
+msgstr "Фото"
+
+#: ../guvcview/gui_gtk3_menu.c:135 ../guvcview/gui_gtk3_menu.c:159
+msgid "File"
+msgstr "Файл"
+
+#: ../guvcview/gui_gtk3_menu.c:136 ../guvcview/gui_gtk3_menu.c:160
+msgid "Increment Filename"
+msgstr "Увеличить имя файла"
+
+#: ../guvcview/gui_gtk3_menu.c:158
+msgid "Video"
+msgstr "Видео"
+
+#: ../guvcview/gui_gtk3_menu.c:175
+msgid "Video Codec"
+msgstr "Видеокодек"
+
+#: ../guvcview/gui_gtk3_menu.c:202
+msgid "Video Codec Properties"
+msgstr "Свойства видеокодека"
+
+#: ../guvcview/gui_gtk3_menu.c:208
+msgid "Audio Codec"
+msgstr "Звуковой кодек"
+
+#: ../guvcview/gui_gtk3_menu.c:235
+msgid "Audio Codec Properties"
+msgstr "Свойства звукового кодека"
+
+#: ../guvcview/gui_gtk3_v4l2ctrls.c:174
+msgid "Left"
+msgstr "Влево"
+
+#: ../guvcview/gui_gtk3_v4l2ctrls.c:175
+msgid "Right"
+msgstr "Вправо"
+
+#: ../guvcview/gui_gtk3_v4l2ctrls.c:179
+msgid "Down"
+msgstr "Вниз"
+
+#: ../guvcview/gui_gtk3_v4l2ctrls.c:180
+msgid "Up"
+msgstr "Вверх"
+
+#. turn it into a menu control
+#: ../guvcview/gui_gtk3_v4l2ctrls.c:296
+msgid "8 bit"
+msgstr "8 бит"
+
+#: ../guvcview/gui_gtk3_v4l2ctrls.c:296
+msgid "12 bit"
+msgstr "12 бит"
+
+#. add a virtual control for software autofocus
+#: ../guvcview/gui_gtk3_v4l2ctrls.c:348
+msgid "Auto Focus (continuous)"
+msgstr "Автофокусировка (непрерывная)"
+
+#: ../guvcview/gui_gtk3_v4l2ctrls.c:349
+msgid "set Focus"
+msgstr "Установка фокуса"
+
+#. control_widgets_list[n].widget2 = gtk_button_new_from_stock(GTK_STOCK_APPLY);
+#. control_widgets_list[n].widget2= gtk_button_new_from_stock(GTK_STOCK_APPLY);
+#. control_widgets_list[n].widget2 = gtk_button_new_from_stock(GTK_STOCK_APPLY);
+#: ../guvcview/gui_gtk3_v4l2ctrls.c:433 ../guvcview/gui_gtk3_v4l2ctrls.c:456
+#: ../guvcview/gui_gtk3_v4l2ctrls.c:478
+#, fuzzy
+msgid "_Apply"
+msgstr "Применить"
+
+#: ../guvcview/gui_gtk3_videoctrls.c:144
+msgid "Frame Rate:"
+msgstr "Частота кадров:"
+
+#: ../guvcview/gui_gtk3_videoctrls.c:204
+msgid "Resolution:"
+msgstr "Разрешение:"
+
+#: ../guvcview/gui_gtk3_videoctrls.c:254
+msgid "Camera Output:"
+msgstr "Вывод камеры:"
+
+#: ../guvcview/gui_gtk3_videoctrls.c:287
+msgid "---- Video Filters ----"
+msgstr "---- Видео-фильтры ----"
+
+#. Mirror FX
+#: ../guvcview/gui_gtk3_videoctrls.c:307
+msgid " Mirror"
+msgstr " Гор. отражение"
+
+#. Upturn FX
+#: ../guvcview/gui_gtk3_videoctrls.c:319
+msgid " Invert"
+msgstr " Верт. отражение"
+
+#. Negate FX
+#: ../guvcview/gui_gtk3_videoctrls.c:331
+msgid " Negative"
+msgstr " Негатив"
+
+#. Mono FX
+#: ../guvcview/gui_gtk3_videoctrls.c:343
+msgid " Mono"
+msgstr " Чёрно-белое"
+
+#. Pieces FX
+#: ../guvcview/gui_gtk3_videoctrls.c:356
+msgid " Pieces"
+msgstr " Мозаика"
+
+#. Particles
+#: ../guvcview/gui_gtk3_videoctrls.c:369
+msgid " Particles"
+msgstr ""
+
+#: ../guvcview/options.c:51
+msgid "Print help"
+msgstr ""
+
+#: ../guvcview/options.c:58
+#, fuzzy
+msgid "Print version"
+msgstr "Показывает версию"
+
+#: ../guvcview/options.c:64
+msgid "LEVEL"
+msgstr ""
+
+#: ../guvcview/options.c:65
+msgid "Set Verbosity level (def: 0)"
+msgstr ""
+
+#: ../guvcview/options.c:71
+msgid "DEVICE"
+msgstr ""
+
+#: ../guvcview/options.c:72
+#, fuzzy
+msgid "Set device name (def: /dev/video0)"
+msgstr "Используемое видео-устройство (по умолчанию /dev/video0)"
+
+#: ../guvcview/options.c:78
+msgid "METHOD"
+msgstr ""
+
+#: ../guvcview/options.c:79
+#, fuzzy
+msgid "Set capture method [read | mmap (def)]"
+msgstr "Метод захвата (1 - mmap (по умолчанию) 2-читать)"
+
+#: ../guvcview/options.c:85
+msgid "WIDTHxHEIGHT"
+msgstr ""
+
+#: ../guvcview/options.c:86
+msgid "Request resolution (e.g 640x480)"
+msgstr ""
+
+#: ../guvcview/options.c:92
+msgid "FOURCC"
+msgstr ""
+
+#: ../guvcview/options.c:93
+msgid "Request format (e.g MJPG)"
+msgstr ""
+
+#: ../guvcview/options.c:99
+msgid "RENDER_API"
+msgstr ""
+
+#: ../guvcview/options.c:100
+msgid "Select render API (e.g none; sdl)"
+msgstr ""
+
+#: ../guvcview/options.c:106
+msgid "AUDIO_API"
+msgstr ""
+
+#: ../guvcview/options.c:107
+msgid "Select audio API (e.g none; port; pulse)"
+msgstr ""
+
+#: ../guvcview/options.c:113
+msgid "AUDIO_DEVICE"
+msgstr ""
+
+#: ../guvcview/options.c:114
+msgid "Select audio device index for selected api (0..N)"
+msgstr ""
+
+#: ../guvcview/options.c:120
+msgid "GUI_API"
+msgstr ""
+
+#: ../guvcview/options.c:121
+msgid "Select GUI API (e.g none; gtk3)"
+msgstr ""
+
+#: ../guvcview/options.c:127 ../guvcview/options.c:134
+msgid "CODEC"
+msgstr ""
+
+#: ../guvcview/options.c:128
+msgid "Audio codec [pcm mp2 mp3 aac ac3 vorb]"
+msgstr ""
+
+#: ../guvcview/options.c:135
+msgid "Video codec [raw mjpg mpeg flv1 wmv1 mpg2 mp43 dx50 h264 vp80 theo]"
+msgstr ""
+
+#: ../guvcview/options.c:141 ../guvcview/options.c:148
+#: ../guvcview/options.c:155
+msgid "FILENAME"
+msgstr ""
+
+#: ../guvcview/options.c:142
+#, fuzzy
+msgid "load control profile"
+msgstr "Загрузить профиль"
+
+#: ../guvcview/options.c:149
+msgid "filename for captured video)"
+msgstr ""
+
+#: ../guvcview/options.c:156
+msgid "filename for captured image)"
+msgstr ""
+
+#: ../guvcview/options.c:162 ../guvcview/options.c:169
+msgid "TIME_IN_SEC"
+msgstr ""
+
+#: ../guvcview/options.c:163
+msgid "time (double) in sec. for video capture)"
+msgstr ""
+
+#: ../guvcview/options.c:170
+msgid "time (double) in sec. between captured photos)"
+msgstr ""
+
+#: ../guvcview/options.c:176
+msgid "TOTAL"
+msgstr ""
+
+#: ../guvcview/options.c:177
+msgid "total number of captured photos)"
+msgstr ""
+
+#: ../guvcview/options.c:184
+msgid "Start in control panel mode"
+msgstr ""
+
+#: ../guvcview/options.c:307
+#, fuzzy, c-format
+msgid ""
+"Guvcview version %s\n"
+"\n"
+msgstr "Guvcview  предупреждение:"
+
+#: ../guvcview/options.c:308
+#, c-format
+msgid ""
+"Usage:\n"
+"   guvcview [OPTIONS]\n"
+"\n"
+msgstr ""
+
+#: ../guvcview/options.c:309
+#, c-format
+msgid "OPTIONS:\n"
+msgstr ""
+
+#: ../guvcview/video_capture.c:819
+#, fuzzy, c-format
+msgid "saving video to %s"
+msgstr "захват видео в"
+
+#. if(debug_level > 1)
+#. printf("GUVCVIEW: saving image to %s\n", img_filename);
+#: ../guvcview/video_capture.c:1069
+#, c-format
+msgid "saving image to %s"
+msgstr ""
+
+#~ msgid "MPEG2 - (lavc)"
+#~ msgstr "MPEG2 - (lavc)"
+
+#~ msgid "MP3 - (lavc)"
+#~ msgstr "MP3 - (lavc)"
+
+#~ msgid "Dolby AC3 - (lavc)"
+#~ msgstr "Dolby AC3 - (lavc)"
+
+#~ msgid "ACC Low - (faac)"
+#~ msgstr "ACC Low - (faac)"
+
+#~ msgid "Audio"
+#~ msgstr "Звук"
+
+#~ msgid " Sound"
+#~ msgstr " Звук"
+
+#~ msgid " Show VU meter"
+#~ msgstr " Отображать значение VU"
+
+#~ msgid "---- Audio Effects ----"
+#~ msgstr "---- Аудио-эффекты ----"
+
+#~ msgid "Save File"
+#~ msgstr "Сохранить файл"
+
+#~ msgid "codec values"
+#~ msgstr "Параметры кодека"
+
+#~ msgid "capturing photo to"
+#~ msgstr "захват фото в"
+
+#~ msgid "Cap. Video"
+#~ msgstr "Захв. видео"
+
+#~ msgid "GUVCViewer Controls"
+#~ msgstr "Панель управления программы GUVCViewer"
+
+#~ msgid ""
+#~ "Guvcview error:\n"
+#~ "\n"
+#~ "Unable to open device"
+#~ msgstr ""
+#~ "Ошибка Guvcview:\n"
+#~ "\n"
+#~ "Не удалось открыть устройство"
+
+#~ msgid ""
+#~ "Please make sure the camera is connected\n"
+#~ "and that the correct driver is installed."
+#~ msgstr ""
+#~ "Пожалуйста убедитесь в том, что камера подключена\n"
+#~ "и драйвер установлен корректно."
+
+#~ msgid ""
+#~ "Guvcview:\n"
+#~ "\n"
+#~ "UVC Extension controls"
+#~ msgstr ""
+#~ "Guvcview:\n"
+#~ "Управление UVC расширениями"
+
+#~ msgid "Extension controls were added to the UVC driver"
+#~ msgstr "Управления расширениями был длбавлен к драйверу UVC"
+
+#~ msgid ""
+#~ "Guvcview error:\n"
+#~ "\n"
+#~ "UVC Extension controls"
+#~ msgstr ""
+#~ "Ошибка Guvcview:\n"
+#~ "Управление UVC расширениями"
+
+#~ msgid ""
+#~ "An error occurred while adding extension\n"
+#~ "controls to the UVC driver\n"
+#~ "Make sure you run guvcview as root (or sudo)."
+#~ msgstr ""
+#~ "Произошла ошибка в добавление\n"
+#~ "управлений к расширению UVC драйвера.\n"
+#~ "Убедитесь, что вы запустили guvcview как root (или sudo)"
+
+#~ msgid ""
+#~ "Guvcview error:\n"
+#~ "\n"
+#~ "Can't set a valid video stream for guvcview"
+#~ msgstr ""
+#~ "Ошибка Guvcview:\n"
+#~ "Правильный видео поток не может быть установлен для guvcview"
+
+#~ msgid ""
+#~ "Make sure your device driver is v4l2 compliant\n"
+#~ "and that it is properly installed."
+#~ msgstr ""
+#~ "Убедитесь что драйвер совместим с v4l2\n"
+#~ "и правильно установлен"
+
+#~ msgid ""
+#~ "Guvcview error:\n"
+#~ "\n"
+#~ "Unable to start with minimum setup"
+#~ msgstr ""
+#~ "Ошибка Guvcview:\n"
+#~ "\n"
+#~ "Не удался запуск с минимальной начальной установкой"
+
+#~ msgid "Please reconnect your camera."
+#~ msgstr "Пожалуйста, переподключите камеру."
+
+#~ msgid ""
+#~ "Guvcview error:\n"
+#~ "\n"
+#~ "Couldn't query device capabilities"
+#~ msgstr ""
+#~ "Ошибка Guvcview:\n"
+#~ "Не могу получить свойства устройства"
+
+#~ msgid "Make sure the device driver supports v4l2."
+#~ msgstr "Убедитесь в том, что драйвер устройства поддерживает v4l2."
+
+#~ msgid ""
+#~ "Guvcview error:\n"
+#~ "\n"
+#~ "Read method error"
+#~ msgstr ""
+#~ "Ошибка Guvcview:\n"
+#~ "\n"
+#~ "Ошибка метода чтения"
+
+#~ msgid "Please try mmap instead (--capture_method=1)."
+#~ msgstr "Попробуйте лучше mmap (--capture_method=1)."
+
+#~ msgid ""
+#~ "Guvcview error:\n"
+#~ "\n"
+#~ "Unable to allocate Buffers"
+#~ msgstr ""
+#~ "Ошибка Guvcview:\n"
+#~ "\n"
+#~ "Не удалось выделить место для буферов"
+
+#~ msgid "Please try restarting your system."
+#~ msgstr "Следует попробовать перезапустить систему."
+
+#~ msgid ""
+#~ "Guvcview error:\n"
+#~ "\n"
+#~ "Unable to create Video Thread"
+#~ msgstr ""
+#~ "Ошибка Guvcview:\n"
+#~ "\n"
+#~ "Не удалось создать поток команд для видео"
+
+#~ msgid "Please report it to http://developer.berlios.de/bugs/?group_id=8179"
+#~ msgstr ""
+#~ "Следует сообщить об этом сюда: http://developer.berlios.de/bugs/?"
+#~ "group_id=8179"
+
+#~ msgid "Bitmap (Bmp)"
+#~ msgstr "Bitmap (Bmp)"
+
+#~ msgid "Portable Network Graphics (Png)"
+#~ msgstr "Portable Network Graphics (Png)"
+
+#~ msgid "Displays debug information"
+#~ msgstr "Показывает информацию для отладки"
+
+#~ msgid "Exit after adding UVC extension controls (needs root/sudo)"
+#~ msgstr ""
+#~ "Выход после добавления расширенных элементов управления UVC (требует root/"
+#~ "sudo)"
+
+#~ msgid "Don't stream video (image controls only)"
+#~ msgstr ""
+#~ "Не работать с потоковым видео (только элементы управления изображением)"
+
+#~ msgid "Don't display a GUI"
+#~ msgstr "Не отображать графический интерфейс"
+
+#~ msgid "Configuration file"
+#~ msgstr "Конфигурационный файл"
+
+#~ msgid "Hardware accelaration (enable(1) | disable(0))"
+#~ msgstr "Аппаратное ускорение (вкл.(1) | выкл.(0))"
+
+#~ msgid ""
+#~ "Pixel format(mjpg|jpeg|yuyv|yvyu|uyvy|yyuv|yu12|yv12|nv12|nv21|nv16|nv61|"
+#~ "y41p|grey|y10b|y16 |s501|s505|s508|gbrg|grbg|ba81|rggb|bgr3|rgb3)"
+#~ msgstr ""
+#~ "Формат пикселей(mjpg|jpeg|yuyv|yvyu|uyvy|yyuv|yu12|yv12|nv12|nv21|nv16|"
+#~ "nv61|y41p|grey|y10b|y16 |s501|s505|s508|gbrg|grbg|ba81|rggb|bgr3|rgb3)"
+
+#~ msgid "Frame size, default: 640x480"
+#~ msgstr "Размер кадра (по умолчанию 640х480)"
+
+#~ msgid "Image capture interval in seconds"
+#~ msgstr "Интервал между снимками (сек)"
+
+#~ msgid "Number of Pictures to capture"
+#~ msgstr "Количество снимков"
+
+#~ msgid "Video File name (capture from start)"
+#~ msgstr "Имя видео-файла (запись сразу после запуска)"
+
+#~ msgid "Video capture time (in seconds)"
+#~ msgstr "Продолжительность видео-записи (сек)"
+
+#~ msgid "Exits guvcview after closing video"
+#~ msgstr "Завершает работу guvcview после закрытия видео"
+
+#~ msgid "Number of initial frames to skip"
+#~ msgstr "Количество начальных кадров для пропуска"
+
+#~ msgid "Show FPS value (enable(1) | disable (0))"
+#~ msgstr "Отображение частоты кадров (вкл.(1) | выкл.(0))"
+
+#~ msgid "Load Profile at start"
+#~ msgstr "Загрузка профиля при запуске"
+
+#~ msgid "- local options"
+#~ msgstr "- локальные параметры"
+
+#~ msgid "Cap. Image"
+#~ msgstr "Сделать снимок"
+
+#~ msgid "Not enough free space left on disk"
+#~ msgstr "Недостаточно свободного места на диске"
+
+#~ msgid "YUY2 - uncomp YUV"
+#~ msgstr "YUY2 - несжатый YUV"
+
+#~ msgid "RGB - uncomp BMP"
+#~ msgstr "RGB - несжатый BMP"
+
+#~ msgid "MKV - Matroska format"
+#~ msgstr "MKV - формат Matroska"
+
+#~ msgid "WEBM - format"
+#~ msgstr "Формат WEBM"
+
+#~ msgid " Show"
+#~ msgstr " Показать"
+
+#~ msgid "Quality:"
+#~ msgstr "Качество:"
