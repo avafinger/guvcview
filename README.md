@@ -5,7 +5,9 @@ This is my modified version (2.0.2.1) that works with OPI (Orange Pi) PC / One /
 with CMOS camera and USB camera.
 
 Thanks to the original author: Paulo Assis (ttps://sourceforge.net/p/guvcview/)
+
 Watch Armbian for Updates and DEB packages: http://www.armbian.com/
+
 I strongly suggest Armbian for you OPI for best performance.
 
 
