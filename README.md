@@ -57,11 +57,14 @@ guvcview -d /dev/video0 -x 640x480 -r sdl -f yu12
 or another resolution
 guvcview -d /dev/video0 -x 1280x720 -r sdl -f yu12
 
+
 How to use Guvcview with s5k4ec (Pine64+):
  * get latest kernel version 3.10.102 (longsleep) with s5k4ec DTB "ok"
- * always run guvcview
+ * always run guvcview with command line:
 guvcview -d /dev/video0 -x 1280x720 -r sdl -f yu12
+
 guvcview -d /dev/video0 -x 1920x1080 -r sdl -f yu12
+
 
 Running guvcview with USB cameras:
  * If you want to run this version with USB Cameras, please run :
