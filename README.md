@@ -23,7 +23,7 @@ Known issues Pine64+:
  * Camera is inverted
  * Some artifacts (need some investigation)
  
-Howto Build from OPI / Pine64+
+Howto Build on OPI / Pine64+
  * clone the repo: git clone https://github.com/avafinger/guvcview.git
  * cd guvcview
  * Install dependencies (see below)
