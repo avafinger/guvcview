@@ -1,5 +1,5 @@
-GTK UVC VIEWER for OPI with CMOS Camera (guvcview)
-***************************************************
+GTK UVC VIEWER for OPI with CMOS Camera (guvcview) (H3 and A64)
+***************************************************************
 
 This is my modified version (2.0.2.1) that works with OPI (Orange Pi) PC / One / 2Plus / 2E
 with CMOS camera and USB camera.
@@ -17,14 +17,22 @@ Known issues:
  * Encoding video stream may end with only 2 fps and sound out of sync, better use a heatsink on your board
  * Start guvcview via command line with the correct parameters
  * Cannot change FPS
+
+Known issues Pine64+:
+ * Controls not working yet
+ * Camera is inverted
+ * Some artifacts (need some investigation)
  
-Howto Build from OPI
+Howto Build from OPI / Pine64+
  * clone the repo: git clone https://github.com/avafinger/guvcview.git
  * cd guvcview
  * Install dependencies (see below)
  * Install linux-headers for your kernel if not already installed (usually /usr/src/linux-headers-your_kernel_version)
  some may find /usr/src/linux-headers-your_kernel_version-sunxi, if that happens you need to edit Makefile.am and add the sufix '-sunxi'.
- * Run:
+ * Run (Debian Jessie):
+
+sudo apt-get install intltool autotools-dev libsdl1.2-dev libgtk-3-dev portaudio19-dev libpng12-dev libavcodec-dev libavutil-dev libudev-dev libusb-1.0-0-dev libpulse-dev libgsl0-dev libv4l-dev libv4l2rds0 libsdl2-dev
+
 ./bootstrap.sh
 
 ./configure --prefix=/usr --enable-yuyv --disable-sdl2
@@ -35,9 +43,11 @@ sudo make install
 
  * Check the version:
 guvcview --version 
+
 Guvcview version 2.0.2
 
-How to use Guvcview:
+
+How to use Guvcview with GC2035 (all Orange PIs)
  * Make sure you have the camera driver loaded:
 modprobe gc2035 hres=0 mclk=34
 modprobe vfe_v4l2
@@ -46,6 +56,12 @@ modprobe vfe_v4l2
 guvcview -d /dev/video0 -x 640x480 -r sdl -f yu12
 or another resolution
 guvcview -d /dev/video0 -x 1280x720 -r sdl -f yu12
+
+How to use Guvcview with s5k4ec (Pine64+):
+ * get latest kernel version 3.10.102 (longsleep) with s5k4ec DTB "ok"
+ * always run guvcview
+guvcview -d /dev/video0 -x 1280x720 -r sdl -f yu12
+guvcview -d /dev/video0 -x 1920x1080 -r sdl -f yu12
 
 Running guvcview with USB cameras:
  * If you want to run this version with USB Cameras, please run :
