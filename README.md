@@ -20,7 +20,6 @@ Known issues:
 
 Known issues Pine64+:
  * Controls not working yet
- * Camera is inverted
  * Some artifacts (need some investigation)
  
 Howto Build on OPI / Pine64+
