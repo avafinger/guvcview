@@ -37,6 +37,8 @@ Howto Build on OPI / Pine64+
 
 sudo apt-get install intltool autotools-dev libsdl1.2-dev libgtk-3-dev portaudio19-dev libpng12-dev libavcodec-dev libavutil-dev libudev-dev libusb-1.0-0-dev libpulse-dev libgsl0-dev libv4l-dev libv4l2rds0 libsdl2-dev
 
+sudo apt-get install libtool
+
 ./bootstrap.sh
 
 ./configure --prefix=/usr --enable-yuyv --disable-sdl2
