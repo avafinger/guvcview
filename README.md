@@ -59,6 +59,8 @@ guvcview -d /dev/video0 -x 640x480 -r sdl -f MJPG
 
 
 How to use Guvcview with GC2035 (all Orange PIs)
+================================================
+
  * Make sure you have the camera driver loaded:
 modprobe gc2035 hres=0 mclk=34
 modprobe vfe_v4l2
@@ -70,6 +72,8 @@ guvcview -d /dev/video0 -x 1280x720 -r sdl -f yu12
 
 
 How to use Guvcview with s5k4ec (Pine64+):
+=========================================
+
  * get latest kernel version 3.10.102 (longsleep) with s5k4ec DTB "ok"
  * always run guvcview with command line:
 guvcview -d /dev/video0 -x 1280x720 -r sdl -f yu12
