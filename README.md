@@ -56,6 +56,8 @@ How to use Guvcview with USB Camera on NanoPi M2/M3
 * Start Guvcview always with command line:
 
 guvcview -d /dev/video0 -x 640x480 -r sdl -f MJPG
+or any other valid window size:
+guvcview -d /dev/video0 -x 1280x720 -r sdl -f MJPG
 
 
 How to use Guvcview with GC2035 (all Orange PIs)
