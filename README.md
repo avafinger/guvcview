@@ -1,14 +1,14 @@
-GTK UVC VIEWER for OPI with CMOS Camera (guvcview) (H3 and A64)
-***************************************************************
+Guvcview for OPI with CMOS Camera (H3 and A64) / NanoPi M2 / M3 with USB camera
+*******************************************************************************
 
 This is my modified version (2.0.2.1) that works with OPI (Orange Pi) PC / One / 2Plus / 2E
-with CMOS camera and USB camera.
+an BananaPi M64 with CMOS camera and NanoPi M2 / M3 USB camera.
 
-Thanks to the original author: Paulo Assis (ttps://sourceforge.net/p/guvcview/)
+Author: Paulo Assis (ttps://sourceforge.net/p/guvcview/)
 
 Watch Armbian for Updates and DEB packages: http://www.armbian.com/
 
-I strongly suggest Armbian for you OPI for best performance.
+I strongly suggest Armbian for you OPI/A64 for best performance.
 
 
 Known issues:
@@ -21,9 +21,14 @@ Known issues:
 Known issues Pine64+:
  * Controls not working yet
  * Some artifacts (need some investigation)
+
+Requirement for NanoPi M2/M3:
+ * USB camera (MJPG)
+
  
-Howto Build on OPI / Pine64+
- * clone the repo: git clone https://github.com/avafinger/guvcview.git
+Howto Build on OPI / Pine64+ 
+ * clone the repo (OPI/A64): git clone https://github.com/avafinger/guvcview.git
+ * NanoPi M2/M3: git clone -b NanoPi_M2_M3 https://github.com/avafinger/guvcview.git
  * cd guvcview
  * Install dependencies (see below)
  * Install linux-headers for your kernel if not already installed (usually /usr/src/linux-headers-your_kernel_version)
@@ -44,6 +49,13 @@ sudo make install
 guvcview --version 
 
 Guvcview version 2.0.2
+
+How to use Guvcview with USB Camera on NanoPi M2/M3
+===================================================
+* Plugin your USB camera (MJPG)
+* Start Guvcview always with command line:
+
+guvcview -d /dev/video0 -x 640x480 -r sdl -f MJPG
 
 
 How to use Guvcview with GC2035 (all Orange PIs)
