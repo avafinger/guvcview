@@ -27,18 +27,18 @@ Known issues BananaPi M64 / Pine64+:
  * Controls not working yet
  * Some artifacts (need some investigation)
 
-Requirement for NanoPi M2/M3: (use this branch: git clone -b NanoPi_M2_M3 )
- * USB camera (MJPG)
-
- 
 Howto Build on OPI / Pine64+ 
  * clone the repo (OPI/A64): git clone https://github.com/avafinger/guvcview.git
- * NanoPi M2/M3: git clone -b NanoPi_M2_M3 https://github.com/avafinger/guvcview.git
  * cd guvcview
  * Install dependencies (see below)
  * Install linux-headers for your kernel if not already installed (usually /usr/src/linux-headers-your_kernel_version)
  some may find /usr/src/linux-headers-your_kernel_version-sunxi, if that happens you need to edit Makefile.am and add the sufix '-sunxi'.
  * Run (Debian Jessie):
+
+Requirement for NanoPi M2/M3: (use this branch: git clone -b NanoPi_M2_M3 )
+ * USB camera (MJPG)
+ * NanoPi M2/M3: git clone -b NanoPi_M2_M3 https://github.com/avafinger/guvcview.git
+
 
 sudo apt-get install intltool libtool autotools-dev libsdl1.2-dev libgtk-3-dev portaudio19-dev libpng12-dev libavcodec-dev libavutil-dev libudev-dev libusb-1.0-0-dev libpulse-dev libgsl0-dev libv4l-dev libv4l2rds0 libsdl2-dev
 
