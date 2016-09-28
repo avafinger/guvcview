@@ -1338,14 +1338,15 @@ static int try_video_stream_format(int width, int height, int pixelformat)
 	}
 
     inp.index = vd->this_device;
-    if (-1 == xioctl(vd->fd, VIDIOC_S_INPUT, &inp))
-        printf("VIDIOC_S_INPUT error!\n");
+    if (-1 == xioctl(vd->fd, VIDIOC_S_INPUT, &inp)) {
+        printf("V4L2_CORE: VIDIOC_S_INPUT error, could not set input: %d!\n", vd->this_device);
+    }
 
     if (my_config->cmos_camera) {
         CLEAR(parms);
         parms.type = V4L2_BUF_TYPE_VIDEO_CAPTURE;
         parms.parm.capture.timeperframe.numerator = 1;
-        parms.parm.capture.timeperframe.denominator = 25;
+        parms.parm.capture.timeperframe.denominator = 30;
         parms.parm.capture.capturemode = 2;
         if (-1 == xioctl(vd->fd, VIDIOC_S_PARM, &parms))
             printf("VIDIOC_S_PARM error\n");
@@ -1724,6 +1725,9 @@ static void clean_v4l2_dev()
  */
 int v4l2core_init_dev(const char *device)
 {
+    struct v4l2_input inp;
+    v4l2_device_list *device_list;
+    
 	assert(device != NULL);
 
 	/*localization*/
@@ -1780,7 +1784,15 @@ int v4l2core_init_dev(const char *device)
 	if(vd->this_device < 0)
 		vd->this_device = 0;
 
-	v4l2_device_list *device_list = v4l2core_get_device_list();
+    inp.index = vd->this_device;
+    if(verbosity > 0)	{
+		printf("V4L2_CORE: input device %d\n",inp.index);
+	}
+    if (-1 == xioctl(vd->fd, VIDIOC_S_INPUT, &inp)) {
+        printf("V4L2_CORE: VIDIOC_S_INPUT error, could not set input: %d!\n", vd->this_device);
+    }
+
+	device_list = v4l2core_get_device_list();
 	if(device_list && device_list->list_devices)
 		device_list->list_devices[vd->this_device].current = 1;
 
