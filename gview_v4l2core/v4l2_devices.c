@@ -193,7 +193,7 @@ int enum_v4l2_devices()
             udev_device_get_sysattr_value() are UTF-8 encoded. */
         if (verbosity > 0)
         {
-            printf("  VID/PID: %s %s\n",
+            printf("  *** VID/PID: %s %s\n",
                 udev_device_get_sysattr_value(dev,"idVendor"),
                 udev_device_get_sysattr_value(dev, "idProduct"));
             printf("  %s\n  %s\n",
@@ -213,6 +213,10 @@ int enum_v4l2_devices()
 		my_device_list.list_devices[num_dev-1].devnum = strtoull(udev_device_get_sysattr_value(dev, "devnum"), NULL, 10);
 
         udev_device_unref(dev);
+
+        /* NanoPi M2 / M3 */
+        /* Stop here, we don't want to sniff the FIMC device, it will hang !!! */
+        break;
     }
     /* Free the enumerator object */
     udev_enumerate_unref(enumerate);

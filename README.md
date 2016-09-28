@@ -1,14 +1,14 @@
-GTK UVC VIEWER for OPI with CMOS Camera (guvcview) (H3 and A64)
-***************************************************************
+Guvcview for OPI with CMOS Camera (H3 and A64) / NanoPi M2 / M3 with USB camera
+*******************************************************************************
 
 This is my modified version (2.0.2.1) that works with OPI (Orange Pi) PC / One / 2Plus / 2E
-with CMOS camera and USB camera.
+an BananaPi M64 with CMOS camera and NanoPi M2 / M3 USB camera.
 
-Thanks to the original author: Paulo Assis (ttps://sourceforge.net/p/guvcview/)
+Author: Paulo Assis (ttps://sourceforge.net/p/guvcview/)
 
 Watch Armbian for Updates and DEB packages: http://www.armbian.com/
 
-I strongly suggest Armbian for you OPI for best performance.
+I strongly suggest Armbian for you OPI/A64 for best performance.
 
 
 Known issues:
@@ -21,9 +21,14 @@ Known issues:
 Known issues Pine64+:
  * Controls not working yet
  * Some artifacts (need some investigation)
+
+Requirement for NanoPi M2/M3:
+ * USB camera (MJPG)
+
  
-Howto Build on OPI / Pine64+
- * clone the repo: git clone https://github.com/avafinger/guvcview.git
+Howto Build on OPI / Pine64+ 
+ * clone the repo (OPI/A64): git clone https://github.com/avafinger/guvcview.git
+ * NanoPi M2/M3: git clone -b NanoPi_M2_M3 https://github.com/avafinger/guvcview.git
  * cd guvcview
  * Install dependencies (see below)
  * Install linux-headers for your kernel if not already installed (usually /usr/src/linux-headers-your_kernel_version)
@@ -31,6 +36,8 @@ Howto Build on OPI / Pine64+
  * Run (Debian Jessie):
 
 sudo apt-get install intltool autotools-dev libsdl1.2-dev libgtk-3-dev portaudio19-dev libpng12-dev libavcodec-dev libavutil-dev libudev-dev libusb-1.0-0-dev libpulse-dev libgsl0-dev libv4l-dev libv4l2rds0 libsdl2-dev
+
+sudo apt-get install libtool
 
 ./bootstrap.sh
 
@@ -45,8 +52,19 @@ guvcview --version
 
 Guvcview version 2.0.2
 
+How to use Guvcview with USB Camera on NanoPi M2/M3
+===================================================
+* Plugin your USB camera (MJPG)
+* Start Guvcview always with command line:
+
+guvcview -d /dev/video0 -x 640x480 -r sdl -f MJPG
+or any other valid window size:
+guvcview -d /dev/video0 -x 1280x720 -r sdl -f MJPG
+
 
 How to use Guvcview with GC2035 (all Orange PIs)
+================================================
+
  * Make sure you have the camera driver loaded:
 modprobe gc2035 hres=0 mclk=34
 modprobe vfe_v4l2
@@ -58,6 +76,8 @@ guvcview -d /dev/video0 -x 1280x720 -r sdl -f yu12
 
 
 How to use Guvcview with s5k4ec (Pine64+):
+=========================================
+
  * get latest kernel version 3.10.102 (longsleep) with s5k4ec DTB "ok"
  * always run guvcview with command line:
 guvcview -d /dev/video0 -x 1280x720 -r sdl -f yu12
