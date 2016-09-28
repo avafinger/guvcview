@@ -216,7 +216,7 @@ int enum_v4l2_devices()
 
         /* NanoPi M2 / M3 */
         /* Stop here, we don't want to sniff the FIMC device, it will hang !!! */
-        break;
+        /* break; */
     }
     /* Free the enumerator object */
     udev_enumerate_unref(enumerate);

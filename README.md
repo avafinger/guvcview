@@ -1,15 +1,20 @@
 Guvcview for OPI with CMOS Camera (H3 and A64) / NanoPi M2 / M3 with USB camera
 *******************************************************************************
 
-This is my modified version (2.0.2.1) that works with OPI (Orange Pi) PC / One / 2Plus / 2E
-an BananaPi M64 with CMOS camera and NanoPi M2 / M3 USB camera.
+This is my modified version (2.0.2) that works with OPI (Orange Pi) PC / One / 2Plus / 2E
+and BananaPi M64 with CMOS camera and if may work with NanoPi M2 / M3 USB camera.
 
-Author: Paulo Assis (ttps://sourceforge.net/p/guvcview/)
+Author: Paulo Assis (https://sourceforge.net/p/guvcview/)
 
 Watch Armbian for Updates and DEB packages: http://www.armbian.com/
 
 I strongly suggest Armbian for you OPI/A64 for best performance.
 
+	Important
+	If you have guvcview stock version installed already, please remove it completely 
+	before install this.
+	Usually you can do this: sudo apt-get purge guvcview
+	Failing to remove the stock version and its libgview will break this hacked version
 
 Known issues:
  * Changing resolution on the fly may lock gucview and you will need to kill the process
@@ -18,11 +23,11 @@ Known issues:
  * Start guvcview via command line with the correct parameters
  * Cannot change FPS
 
-Known issues Pine64+:
+Known issues BananaPi M64 / Pine64+:
  * Controls not working yet
  * Some artifacts (need some investigation)
 
-Requirement for NanoPi M2/M3:
+Requirement for NanoPi M2/M3: (use this branch: git clone -b NanoPi_M2_M3 )
  * USB camera (MJPG)
 
  
@@ -35,9 +40,7 @@ Howto Build on OPI / Pine64+
  some may find /usr/src/linux-headers-your_kernel_version-sunxi, if that happens you need to edit Makefile.am and add the sufix '-sunxi'.
  * Run (Debian Jessie):
 
-sudo apt-get install intltool autotools-dev libsdl1.2-dev libgtk-3-dev portaudio19-dev libpng12-dev libavcodec-dev libavutil-dev libudev-dev libusb-1.0-0-dev libpulse-dev libgsl0-dev libv4l-dev libv4l2rds0 libsdl2-dev
-
-sudo apt-get install libtool
+sudo apt-get install intltool libtool autotools-dev libsdl1.2-dev libgtk-3-dev portaudio19-dev libpng12-dev libavcodec-dev libavutil-dev libudev-dev libusb-1.0-0-dev libpulse-dev libgsl0-dev libv4l-dev libv4l2rds0 libsdl2-dev
 
 ./bootstrap.sh
 
@@ -54,7 +57,8 @@ Guvcview version 2.0.2
 
 How to use Guvcview with USB Camera on NanoPi M2/M3
 ===================================================
-* Plugin your USB camera (MJPG)
+* checkout with -b NanoPi_M2_M3 like so: git clone -b NanoPi_M2_M3
+* Attach your USB camera (MJPG)
 * Start Guvcview always with command line:
 
 guvcview -d /dev/video0 -x 640x480 -r sdl -f MJPG
@@ -85,8 +89,8 @@ guvcview -d /dev/video0 -x 1280x720 -r sdl -f yu12
 guvcview -d /dev/video0 -x 1920x1080 -r sdl -f yu12
 
 
-Running guvcview with USB cameras:
- * If you want to run this version with USB Cameras, please run :
+Running guvcview with some USB cameras:
+ * If you want to run this version with USB Cameras (not advised), please run :
 guvcview --cmos_camera=0 -d /dev/video0 -x 640x480 -r sdl -f yu12
  * if you need some help:
 guvcview --help 
