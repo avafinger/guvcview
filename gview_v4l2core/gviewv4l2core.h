@@ -134,7 +134,7 @@ __BEGIN_DECLS
 /*
  * buffer number (for driver mmap ops)
  */
-#define NB_BUFFER 4 // 8 ** may be needed for isp & bayer raw?
+#define NB_BUFFER 8 // Support for 8MP sensor (isp & bayer raw)
 
 /*jpeg header def*/
 #define HEADERFRAME1 0xaf
