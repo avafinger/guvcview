@@ -144,6 +144,12 @@ int enum_v4l2_devices()
             continue; /*next dir entry*/
         }
 
+        if (xioctl(fd, VIDIOC_S_INPUT, &num_dev) == -1) 	{
+            fprintf(stderr, "V4L2_CORE: Error selecting input %i\n", num_dev);
+            fprintf(stderr, "V4L2_CORE: VIDIOC_S_INPUT: %s\n", strerror(errno));
+            return(-1);
+        }
+
         if (xioctl(fd, VIDIOC_QUERYCAP, &v4l2_cap) < 0)
         {
             fprintf(stderr, "V4L2_CORE: VIDIOC_QUERYCAP error: %s\n", strerror(errno));
