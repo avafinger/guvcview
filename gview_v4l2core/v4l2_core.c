@@ -138,6 +138,10 @@ static int check_v4l2_dev()
 
 	memset(&vd->cap, 0, sizeof(struct v4l2_capability));
 
+if(verbosity > 0)
+		printf("V4L2_CORE: %s\n", __func__);
+
+
 	if ( xioctl(vd->fd, VIDIOC_QUERYCAP, &vd->cap) < 0 )
 	{
 		fprintf( stderr, "V4L2_CORE: (VIDIOC_QUERYCAP) error: %s\n", strerror(errno));
@@ -1706,7 +1710,7 @@ static void clean_v4l2_dev()
 	
 	/*close descriptor*/
 	if(vd->fd > 0)
-		v4l2_close(vd->fd);
+		close(vd->fd);
 
 	vd->fd = 0;
 
@@ -1773,7 +1777,7 @@ int v4l2core_init_dev(const char *device)
 	vd->tilt_step = 128;
 
 	/*open device*/
-	if ((vd->fd = v4l2_open(vd->videodevice, O_RDWR | O_NONBLOCK, 0)) < 0)
+	if ((vd->fd = open(vd->videodevice, O_RDWR | O_NONBLOCK)) < 0)
 	{
 		fprintf(stderr, "V4L2_CORE: ERROR opening V4L interface: %s\n", strerror(errno));
 		clean_v4l2_dev(vd);

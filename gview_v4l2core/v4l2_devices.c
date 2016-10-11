@@ -22,6 +22,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <linux/videodev2.h>
+#include <unistd.h>
 #include <fcntl.h>
 #include <string.h>
 #include <errno.h>
@@ -137,17 +138,20 @@ int enum_v4l2_devices()
 
 		int fd = 0;
         /* open the device and query the capabilities */
-        if ((fd = v4l2_open(v4l2_device, O_RDWR | O_NONBLOCK, 0)) < 0)
+        if ((fd = open(v4l2_device, O_RDWR | O_NONBLOCK, 0)) < 0)
         {
             fprintf(stderr, "V4L2_CORE: ERROR opening V4L2 interface for %s\n", v4l2_device);
-            v4l2_close(fd);
+            close(fd);
             continue; /*next dir entry*/
         }
+
+if (verbosity > 0)
+            printf("V4L2_CORE: Device Node Path: %s - %s\n", __func__, v4l2_device);
 
         if (xioctl(fd, VIDIOC_S_INPUT, &num_dev) == -1) 	{
             fprintf(stderr, "V4L2_CORE: Error selecting input %i\n", num_dev);
             fprintf(stderr, "V4L2_CORE: VIDIOC_S_INPUT: %s\n", strerror(errno));
-            v4l2_close(fd);
+            close(fd);
             continue; /*next dir entry*/
         }
 
@@ -155,10 +159,10 @@ int enum_v4l2_devices()
         {
             fprintf(stderr, "V4L2_CORE: VIDIOC_QUERYCAP error: %s\n", strerror(errno));
             fprintf(stderr, "V4L2_CORE: couldn't query device %s\n", v4l2_device);
-            v4l2_close(fd);
+            close(fd);
             continue; /*next dir entry*/
         }
-        v4l2_close(fd);
+        close(fd);
 
         num_dev++;
         /* Update the device list*/
