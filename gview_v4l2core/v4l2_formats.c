@@ -315,6 +315,7 @@ static int enum_frame_intervals(v4l2_dev_t *vd,
 
         vd->list_stream_formats[fmtind-1].list_stream_cap[fsizeind-1].framerate_num[list_fps-1] = 1;
         vd->list_stream_formats[fmtind-1].list_stream_cap[fsizeind-1].framerate_denom[list_fps-1] = 25;
+        vd->list_stream_formats[fmtind-1].list_stream_cap[fsizeind-1].numb_frates = 1;
     }
 
     if (!my_config->cmos_camera) {
