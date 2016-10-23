@@ -77,6 +77,7 @@ How to use Guvcview with GC2035 (all Orange PIs)
 type in command line:
 
 	modprobe gc2035 hres=0 mclk=34
+
 	modprobe vfe_v4l2
 
  * Check if you have /dev/video0 (our camera)
@@ -84,7 +85,9 @@ type in command line:
 type:
 
 	guvcview -d /dev/video0 -x 640x480 -r sdl -f yu12
+
 	or another resolution
+
 	guvcview -d /dev/video0 -x 1280x720 -r sdl -f yu12
 
 
@@ -128,33 +131,35 @@ Running guvcview with some USB cameras
 guvcview --cmos_camera=0 -d /dev/video0 -x 640x480 -r sdl -f yu12
  * if you need some help:
 guvcview --help 
-Usage:
-   guvcview [OPTIONS]
 
-OPTIONS:
--h,--help                             	:Print help
--v,--version                          	:Print version
--w,--verbosity=LEVEL                  	:Set Verbosity level (def: 0)
--q,--cmos_camera=CAMERA               	:Set CMOS camera use (def: 1)
--d,--device=DEVICE                    	:Set device name (def: /dev/video0)
--c,--capture=METHOD                   	:Set capture method [read | mmap (def)]
--b,--disable_libv4l2                  	:disable calls to libv4l2
--x,--resolution=WIDTHxHEIGHT          	:Request resolution (e.g 640x480)
--f,--format=FOURCC                    	:Request format (e.g MJPG)
--r,--render=RENDER_API                	:Select render API (e.g none; sdl)
--m,--render_window=RENDER_WINDOW_FLAGS	:Set render window flags (e.g none; full; max)
--a,--audio=AUDIO_API                  	:Select audio API (e.g none; port; pulse)
--k,--audio_device=AUDIO_DEVICE        	:Select audio device index for selected api (0..N)
--g,--gui=GUI_API                      	:Select GUI API (e.g none; gtk3)
--o,--audio_codec=CODEC                	:Audio codec [pcm mp2 mp3 aac ac3 vorb]
--u,--video_codec=CODEC                	:Video codec [raw mjpg mpeg flv1 wmv1 mpg2 mp43 dx50 h264 vp80 theo]
--p,--profile=FILENAME                 	:load control profile
--j,--video=FILENAME                   	:filename for captured video)
--i,--image=FILENAME                   	:filename for captured image)
--y,--video_timer=TIME_IN_SEC          	:time (double) in sec. for video capture)
--t,--photo_timer=TIME_IN_SEC          	:time (double) in sec. between captured photos)
--n,--photo_total=TOTAL                	:total number of captured photos)
--z,--control_panel                    	:Start in control panel mode
+
+	Usage:
+	   guvcview [OPTIONS]
+	
+	OPTIONS:
+	-h,--help                             	:Print help
+	-v,--version                          	:Print version
+	-w,--verbosity=LEVEL                  	:Set Verbosity level (def: 0)
+	-q,--cmos_camera=CAMERA               	:Set CMOS camera use (def: 1)
+	-d,--device=DEVICE                    	:Set device name (def: /dev/video0)
+	-c,--capture=METHOD                   	:Set capture method [read | mmap (def)]
+	-b,--disable_libv4l2                  	:disable calls to libv4l2
+	-x,--resolution=WIDTHxHEIGHT          	:Request resolution (e.g 640x480)
+	-f,--format=FOURCC                    	:Request format (e.g MJPG)
+	-r,--render=RENDER_API                	:Select render API (e.g none; sdl)
+	-m,--render_window=RENDER_WINDOW_FLAGS	:Set render window flags (e.g none; full; max)
+	-a,--audio=AUDIO_API                  	:Select audio API (e.g none; port; pulse)
+	-k,--audio_device=AUDIO_DEVICE        	:Select audio device index for selected api (0..N)
+	-g,--gui=GUI_API                      	:Select GUI API (e.g none; gtk3)
+	-o,--audio_codec=CODEC                	:Audio codec [pcm mp2 mp3 aac ac3 vorb]
+	-u,--video_codec=CODEC                	:Video codec [raw mjpg mpeg flv1 wmv1 mpg2 mp43 dx50 h264 vp80 theo]
+	-p,--profile=FILENAME                 	:load control profile
+	-j,--video=FILENAME                   	:filename for captured video)
+	-i,--image=FILENAME                   	:filename for captured image)
+	-y,--video_timer=TIME_IN_SEC          	:time (double) in sec. for video capture)
+	-t,--photo_timer=TIME_IN_SEC          	:time (double) in sec. between captured photos)
+	-n,--photo_total=TOTAL                	:total number of captured photos)
+	-z,--control_panel                    	:Start in control panel mode
 
 
 Basic Configuration
@@ -163,25 +168,26 @@ Dependencies:
 -------------
 
 Guvcview depends on the following:
- - intltool,
- - autotools, 
- - libsdl2 or libsdl, 
- - libgtk-3, 
- - portaudio19, 
- - libpng, 
- - libavcodec, 
- - libavutil, 
- - libv4l, 
- - libudev,
- - libusb-1.0,
- - libpulse (optional)
- - libgsl (optional)
+	 - intltool,
+	 - autotools, 
+	 - libsdl2 or libsdl, 
+	 - libgtk-3, 
+	 - portaudio19, 
+	 - libpng, 
+	 - libavcodec, 
+	 - libavutil, 
+	 - libv4l, 
+	 - libudev,
+	 - libusb-1.0,
+	 - libpulse (optional)
+	 - libgsl (optional)
 
 On most distributions you can just install the development 
 packages:
- intltool, autotools-dev, libsdl2-dev, libgtk-3-dev, 
- portaudio19-dev, libpng12-dev, libavcodec-dev, libavutil-dev,
- libv4l-dev, libudev-dev, libusb-1.0-0-dev, libpulse-dev, libgsl-dev
+
+	intltool, autotools-dev, libsdl2-dev, libgtk-3-dev, 
+	portaudio19-dev, libpng12-dev, libavcodec-dev, libavutil-dev,
+	libv4l-dev, libudev-dev, libusb-1.0-0-dev, libpulse-dev, libgsl-dev
 
 GUVCVIEW Author: Paulo Assis (https://sourceforge.net/p/guvcview/)
 
