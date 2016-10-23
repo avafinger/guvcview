@@ -1702,8 +1702,8 @@ static void clean_v4l2_dev()
 	if(vd->list_stream_formats)
 		free_frame_formats(vd);
 
-	if(vd->list_device_controls)
-		free_v4l2_control_list(vd);
+	// if(vd->list_device_controls)
+	//	free_v4l2_control_list(vd);
 	
 	if(vd->frame_queue)
 		free(vd->frame_queue);
