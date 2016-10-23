@@ -66,7 +66,9 @@ How to use Guvcview with USB Camera on NanoPi M2/M3
 * Start Guvcview always with command line:
 
 guvcview -d /dev/video0 -x 640x480 -r sdl -f MJPG
+
 or any other valid window size:
+
 guvcview -d /dev/video0 -x 1280x720 -r sdl -f MJPG
 
 
@@ -97,11 +99,13 @@ How to use Guvcview with s5k4ec (Pine64+):
  * get latest kernel version 3.10.102 (longsleep) with s5k4ec DTB "ok"
  * Xenial 16.04 LTS
  * (FIXED) always run guvcview by command line:
-guvcview -d /dev/video0 -x 1280x720 -r sdl -f yu12
+	
+	
+	guvcview -d /dev/video0 -x 1280x720 -r sdl -f yu12
 
-guvcview -d /dev/video0 -x 1920x1080 -r sdl -f yu12
+	guvcview -d /dev/video0 -x 1920x1080 -r sdl -f yu12
 
-or run just guvcview or from the menu
+	or run just guvcview or from the menu
 
 How to use Guvcview with ov5640 (BananaPi M64 / Pine64+):
 =========================================================
@@ -109,11 +113,13 @@ How to use Guvcview with ov5640 (BananaPi M64 / Pine64+):
  * get latest kernel version 3.10.102 (longsleep) with ov5640 DTB enabled
  * Xenial 16.04 LTS
  * (FIXED) always run guvcview by command line:
-guvcview -d /dev/video0 -x 1280x720 -r sdl -f yu12
 
-guvcview -d /dev/video0 -x 1920x1080 -r sdl -f yu12
 
-or run just guvcview or from the menu
+	guvcview -d /dev/video0 -x 1280x720 -r sdl -f yu12
+
+	guvcview -d /dev/video0 -x 1920x1080 -r sdl -f yu12
+
+	or run just guvcview or from the menu
 
 How to use Guvcview with ov8865 (BananaPi M3):
 ==============================================
@@ -121,16 +127,21 @@ How to use Guvcview with ov8865 (BananaPi M3):
  * get linux-sunxi version 3.4.39
  * Xenial 16.04 LTS
  * (FIXED) always run guvcview by command line FIRST with 1920x1080:
-guvcview -d /dev/video0 -x 1920x1080 -r sdl -f yu12
 
-or run just guvcview or from the menu
+
+	guvcview -d /dev/video0 -x 1920x1080 -r sdl -f yu12
+
+	or run just guvcview or from the menu
 
 Running guvcview with some USB cameras
 --------------------------------------
  * If you want to run this version with USB Cameras (not advised), please run :
 guvcview --cmos_camera=0 -d /dev/video0 -x 640x480 -r sdl -f yu12
  * if you need some help:
+
+
 guvcview --help 
+
 
 
 	Usage:
