@@ -27,6 +27,7 @@
 #include <sys/syscall.h>
 #include <sys/stat.h>
 #include <sys/resource.h>
+#include <locale.h>
 
 #include "gview.h"
 #include "gviewv4l2core.h"

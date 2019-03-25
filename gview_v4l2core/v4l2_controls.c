@@ -850,11 +850,13 @@ void get_v4l2_control_values (v4l2_dev_t *vd)
         if((current->next == NULL) || (current->next->class != current->class))
         {
             struct v4l2_ext_controls ctrls = {0};
+#if 0
             ctrls.ctrl_class = current->class;
             ctrls.count = count;
             ctrls.controls = clist;
             ret = xioctl(vd->fd, VIDIOC_G_EXT_CTRLS, &ctrls);
             if(ret)
+#endif
             {
                 fprintf(stderr, "V4L2_CORE: (VIDIOC_G_EXT_CTRLS) failed\n");
                 struct v4l2_control ctrl;

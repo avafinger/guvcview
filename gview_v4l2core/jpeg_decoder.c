@@ -1436,7 +1436,7 @@ int jpeg_init_decoder(int width, int height)
 		exit(-1);
 	}
 
-	codec_data->context->pix_fmt = PIX_FMT_YUV422P;
+	codec_data->context->pix_fmt = AV_PIX_FMT_YUV422P;
 	codec_data->context->width = width;
 	codec_data->context->height = height;
 	//jpeg_ctx->context->dsp_mask = (FF_MM_MMX | FF_MM_MMXEXT | FF_MM_SSE);
