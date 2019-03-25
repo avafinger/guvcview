@@ -970,7 +970,7 @@ int h264_init_decoder(int width, int height)
 	}
 	
 	h264_ctx->context->flags2 |= CODEC_FLAG2_FAST;
-	h264_ctx->context->pix_fmt = PIX_FMT_YUV420P;
+	h264_ctx->context->pix_fmt = AV_PIX_FMT_YUV420P;
 	h264_ctx->context->width = width;
 	h264_ctx->context->height = height;
 	//h264_ctx->context->dsp_mask = (FF_MM_MMX | FF_MM_MMXEXT | FF_MM_SSE);
